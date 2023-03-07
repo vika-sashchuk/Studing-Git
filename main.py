@@ -1,3 +1,6 @@
+import random
+
+
 class Main:
     title = 'Title'
     text = 'Text'
@@ -25,7 +28,7 @@ class Main:
 
     def print_console(self):
 
-        display = list(self.base.keys())[0]
+        display = random.choice(list(self.base.keys()))
         print(display, self.base[display])
 
 
