@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  studinggit1:
+    image: studinggit1
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:8000
