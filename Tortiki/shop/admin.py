@@ -3,10 +3,10 @@ from shop.models import Shop, Tortik
 
 @admin.register(Shop)
 class ShopAdmin(admin.ModelAdmin):
-    pass
+    list_display = ['name', 'address', 'shop_type']
 
 @admin.register(Tortik)
 class TortikAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('name', 'tortik_type', 'weight')
 
 # Register your models here.
