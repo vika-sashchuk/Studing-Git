@@ -1,4 +1,2 @@
 martor
 gunicorn
-gunicorn
-gunicorn
