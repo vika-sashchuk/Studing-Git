@@ -3,16 +3,16 @@ from django.db import models
 # Create your models here.
 
 SHOP_TYPE_CHOICES = [
-    ('store', 'store'),
-    ('delivery', 'delivery'),
-    ('stock', 'stock')
+    ('store', 'Store'),
+    ('delivery', 'Delivery'),
+    ('stock', 'Stock')
     ]
 
 TORTIK_TYPE_CHOICES = [
-    ('biscuit ', 'biscuit'),
-    ('alicante', 'alicante'),
-    ('banana', 'banana'),
-    ('kyiv', 'kyiv')
+    ('biscuit ', 'Biscuit'),
+    ('alicante', 'Alicante'),
+    ('banana', 'Banana'),
+    ('kyiv', 'Kyiv')
     ]
 
 
