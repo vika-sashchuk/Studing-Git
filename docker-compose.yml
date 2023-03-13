@@ -1,10 +1,17 @@
-version: '3.4'
+version: '3.9'
 
 services:
-  studinggit1:
-    image: studinggit1
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+  postgres_demo:
+    container_name: postgres_demo
+    image: postgres:alpine3.17
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 6424
+      PGDATA: /data/postgres
+    volumes:
+       - postgres-db-volume:/data/postgres
     ports:
-      - 8000:8000
+      - "5432:5432"
+
+volumes:
+  postgres-db-volume:
