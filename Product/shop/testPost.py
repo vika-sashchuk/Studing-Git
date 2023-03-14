@@ -9,6 +9,6 @@ class ShopTestCase(TestCase):
         self.assertEqual(shop.address, "Test Address")
         self.assertEqual(shop.shop_type, "Store")
 
-class TortikTestCase(TestCase):
-    def testTortik(self):
+class ProductTestCase(TestCase):
+    def testProduct(self):
         pass

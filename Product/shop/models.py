@@ -8,7 +8,7 @@ SHOP_TYPE_CHOICES = [
     ('stock', 'Stock')
     ]
 
-TORTIK_TYPE_CHOICES = [
+PRODUCT_TYPE_CHOICES = [
     ('biscuit ', 'Biscuit'),
     ('alicante', 'Alicante'),
     ('banana', 'Banana'),
@@ -25,10 +25,10 @@ class Shop(models.Model):
         return self.name
 
 
-class Tortik(models.Model):
+class Product(models.Model):
     name = models.CharField(max_length=200)
-    image = models.ImageField(upload_to='tortik_img/', null=True)
-    tortik_type = models.CharField(choices=TORTIK_TYPE_CHOICES, max_length=50)
+    image = models.ImageField(upload_to='product_img/', null=True)
+    product_type = models.CharField(choices=PRODUCT_TYPE_CHOICES, max_length=50)
     description = models.TextField()
     weight = models.DecimalField(decimal_places=2, max_digits=10)
 

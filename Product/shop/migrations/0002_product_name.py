@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AddField(
-            model_name='tortik',
+            model_name='product',
             name='name',
             field=models.CharField(default='a', max_length=200),
             preserve_default=False,
